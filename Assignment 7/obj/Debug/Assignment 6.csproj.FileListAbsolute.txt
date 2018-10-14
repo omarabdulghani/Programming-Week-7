@@ -1,0 +1,10 @@
+C:\Users\Omar\source\repos\Week 7 Assignments\Programming-Week-7\Assignment 7\obj\Debug\Assignment 6.csprojAssemblyReference.cache
+C:\Users\Omar\source\repos\Week 7 Assignments\Programming-Week-7\Assignment 7\obj\Debug\Assignment_7.Form1.resources
+C:\Users\Omar\source\repos\Week 7 Assignments\Programming-Week-7\Assignment 7\obj\Debug\Assignment_7.Properties.Resources.resources
+C:\Users\Omar\source\repos\Week 7 Assignments\Programming-Week-7\Assignment 7\obj\Debug\Assignment 6.csproj.GenerateResource.cache
+C:\Users\Omar\source\repos\Week 7 Assignments\Programming-Week-7\Assignment 7\obj\Debug\Assignment 6.csproj.CoreCompileInputs.cache
+C:\Users\Omar\source\repos\Week 7 Assignments\Programming-Week-7\Assignment 7\bin\Debug\Assignment 7.exe.config
+C:\Users\Omar\source\repos\Week 7 Assignments\Programming-Week-7\Assignment 7\bin\Debug\Assignment 7.exe
+C:\Users\Omar\source\repos\Week 7 Assignments\Programming-Week-7\Assignment 7\bin\Debug\Assignment 7.pdb
+C:\Users\Omar\source\repos\Week 7 Assignments\Programming-Week-7\Assignment 7\obj\Debug\Assignment 7.exe
+C:\Users\Omar\source\repos\Week 7 Assignments\Programming-Week-7\Assignment 7\obj\Debug\Assignment 7.pdb

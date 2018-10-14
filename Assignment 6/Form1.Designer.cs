@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtDegrees = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnCalculate = new System.Windows.Forms.Button();
-            this.rdCtoK = new System.Windows.Forms.RadioButton();
-            this.rdCtoF = new System.Windows.Forms.RadioButton();
             this.rdFtoC = new System.Windows.Forms.RadioButton();
+            this.rdCtoF = new System.Windows.Forms.RadioButton();
+            this.rdCtoK = new System.Windows.Forms.RadioButton();
+            this.btnCalculate = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblResult = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +55,7 @@
             this.txtDegrees.Name = "txtDegrees";
             this.txtDegrees.Size = new System.Drawing.Size(119, 20);
             this.txtDegrees.TabIndex = 1;
+            this.txtDegrees.TextChanged += new System.EventHandler(this.txtDegrees_TextChanged);
             // 
             // groupBox1
             // 
@@ -68,25 +69,16 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Conversion";
             // 
-            // btnCalculate
+            // rdFtoC
             // 
-            this.btnCalculate.Location = new System.Drawing.Point(41, 224);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(227, 35);
-            this.btnCalculate.TabIndex = 3;
-            this.btnCalculate.Text = "Calculate";
-            this.btnCalculate.UseVisualStyleBackColor = true;
-            // 
-            // rdCtoK
-            // 
-            this.rdCtoK.AutoSize = true;
-            this.rdCtoK.Location = new System.Drawing.Point(29, 39);
-            this.rdCtoK.Name = "rdCtoK";
-            this.rdCtoK.Size = new System.Drawing.Size(103, 17);
-            this.rdCtoK.TabIndex = 0;
-            this.rdCtoK.TabStop = true;
-            this.rdCtoK.Text = "Celcius to Kelvin";
-            this.rdCtoK.UseVisualStyleBackColor = true;
+            this.rdFtoC.AutoSize = true;
+            this.rdFtoC.Location = new System.Drawing.Point(29, 86);
+            this.rdFtoC.Name = "rdFtoC";
+            this.rdFtoC.Size = new System.Drawing.Size(124, 17);
+            this.rdFtoC.TabIndex = 2;
+            this.rdFtoC.TabStop = true;
+            this.rdFtoC.Text = "Fahrenheit to Celcius";
+            this.rdFtoC.UseVisualStyleBackColor = true;
             // 
             // rdCtoF
             // 
@@ -99,16 +91,27 @@
             this.rdCtoF.Text = "Celcius to Fahrenheit";
             this.rdCtoF.UseVisualStyleBackColor = true;
             // 
-            // rdFtoC
+            // rdCtoK
             // 
-            this.rdFtoC.AutoSize = true;
-            this.rdFtoC.Location = new System.Drawing.Point(29, 86);
-            this.rdFtoC.Name = "rdFtoC";
-            this.rdFtoC.Size = new System.Drawing.Size(124, 17);
-            this.rdFtoC.TabIndex = 2;
-            this.rdFtoC.TabStop = true;
-            this.rdFtoC.Text = "Fahrenheit to Celcius";
-            this.rdFtoC.UseVisualStyleBackColor = true;
+            this.rdCtoK.AutoSize = true;
+            this.rdCtoK.Location = new System.Drawing.Point(29, 39);
+            this.rdCtoK.Name = "rdCtoK";
+            this.rdCtoK.Size = new System.Drawing.Size(103, 17);
+            this.rdCtoK.TabIndex = 0;
+            this.rdCtoK.TabStop = true;
+            this.rdCtoK.Text = "Celcius to Kelvin";
+            this.rdCtoK.UseVisualStyleBackColor = true;
+            this.rdCtoK.CheckedChanged += new System.EventHandler(this.rdCtoK_CheckedChanged);
+            // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Location = new System.Drawing.Point(41, 224);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(227, 35);
+            this.btnCalculate.TabIndex = 3;
+            this.btnCalculate.Text = "Calculate";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
             // 
             // label2
             // 
@@ -119,21 +122,21 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Converted Degrees";
             // 
-            // label3
+            // lblResult
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(179, 290);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(179, 290);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(35, 13);
+            this.lblResult.TabIndex = 5;
+            this.lblResult.Text = "label3";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(309, 316);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblResult);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnCalculate);
             this.Controls.Add(this.groupBox1);
@@ -158,7 +161,7 @@
         private System.Windows.Forms.RadioButton rdCtoK;
         private System.Windows.Forms.Button btnCalculate;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblResult;
     }
 }
 

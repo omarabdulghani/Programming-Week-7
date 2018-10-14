@@ -62,6 +62,7 @@
             this.btnSquareRef.TabIndex = 2;
             this.btnSquareRef.Text = "Square By Reference";
             this.btnSquareRef.UseVisualStyleBackColor = true;
+            this.btnSquareRef.Click += new System.EventHandler(this.btnSquareRef_Click);
             // 
             // SquareRefOut
             // 
@@ -71,6 +72,7 @@
             this.SquareRefOut.TabIndex = 3;
             this.SquareRefOut.Text = "Square By Reference Out";
             this.SquareRefOut.UseVisualStyleBackColor = true;
+            this.SquareRefOut.Click += new System.EventHandler(this.SquareRefOut_Click);
             // 
             // btnSquareValue
             // 
@@ -80,6 +82,7 @@
             this.btnSquareValue.TabIndex = 4;
             this.btnSquareValue.Text = "Square By Value";
             this.btnSquareValue.UseVisualStyleBackColor = true;
+            this.btnSquareValue.Click += new System.EventHandler(this.btnSquareValue_Click);
             // 
             // label2
             // 

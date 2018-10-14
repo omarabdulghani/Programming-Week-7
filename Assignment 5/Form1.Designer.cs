@@ -87,9 +87,9 @@
             this.lblResult.AutoSize = true;
             this.lblResult.Location = new System.Drawing.Point(133, 279);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(35, 13);
+            this.lblResult.Size = new System.Drawing.Size(13, 13);
             this.lblResult.TabIndex = 9;
-            this.lblResult.Text = "label4";
+            this.lblResult.Text = "0";
             // 
             // btnDivide
             // 
@@ -102,6 +102,7 @@
             this.btnDivide.TabIndex = 7;
             this.btnDivide.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnDivide.UseVisualStyleBackColor = true;
+            this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
             // 
             // btnMulti
             // 
@@ -114,6 +115,7 @@
             this.btnMulti.TabIndex = 6;
             this.btnMulti.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMulti.UseVisualStyleBackColor = true;
+            this.btnMulti.Click += new System.EventHandler(this.btnMulti_Click);
             // 
             // btnMinus
             // 
@@ -126,6 +128,7 @@
             this.btnMinus.TabIndex = 5;
             this.btnMinus.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
             // 
             // btnPlus
             // 
@@ -138,6 +141,7 @@
             this.btnPlus.TabIndex = 4;
             this.btnPlus.TextAlign = System.Drawing.ContentAlignment.TopRight;
             this.btnPlus.UseVisualStyleBackColor = true;
+            this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
             // Form1
             // 
